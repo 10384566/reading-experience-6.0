@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>少儿英语分级读物 · 阅读体验评估（极简版）</title>
+<link rel="stylesheet" href="./assets/styles.css"/>
+</head>
+<body>
+<div class="container card">
+  <h1>少儿英语分级读物 · 阅读体验评估（极简版）</h1>
+  <div class="sub">零依赖 · 纯前端 · 使用合并后的数据集（dataset.json）</div>
+  <div class="grid">
+    <div>
+      <label>孩子年龄（3–15）</label>
+      <select id="age"></select>
+    </div>
+    <div>
+      <label>性别</label>
+      <select id="gender">
+        <option value="female">女</option>
+        <option value="male">男</option>
+      </select>
+    </div>
+  </div>
+  <hr/>
+  <div id="rows"></div>
+  <div class="btns">
+    <button id="calc">开始计算</button>
+    <button class="secondary" id="reset">重置选择</button>
+  </div>
+</div>
+
+<div id="reportWrap" class="container"></div>
+
+<script src="./main.js"></script>
+</body>
+</html>
